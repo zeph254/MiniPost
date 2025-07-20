@@ -5,6 +5,8 @@ import Create from "./pages/Create";
 import PostDetail from "./pages/PostDetail";
 import Edit from "./pages/Edit";
 import './App.css'
+import About from './pages/About'
+import Contact from './pages/Contact'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
         <Route path="/create" element={<Create />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/posts/:id" element={<PostDetail />} />
         <Route path="/edit/:id" element={<Edit />} />
       </Route>
